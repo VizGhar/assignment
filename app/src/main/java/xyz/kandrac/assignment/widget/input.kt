@@ -40,27 +40,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 /**
- * TODOs
- * Material Design:
- * Material Design is partially handled in Figma, but there are some undefined states.
- * Can't setup Material Theme based on assignment
- * - adjust MaterialTheme based on overall design
- * - apply MaterialTheme instead of directly using colors
- * - extract colors and text styles to separate files
- *
- * Other:
- * - enabled/disabled colors unspecified and not set
- * - PasswordInput hardcoded error messages
- * - currently fill max width is forced - handle measurements = layout phase or BoxWithConstraints
- *
- * NOTEs:
- * - unspecified behavior Input + Optional text length exceeds line width
- * - design secretly suggests trailing icon - added
- * - assignment states - clear "invalid password" communication
- *      - visual not specified
- *      - added below input
- *      - multiline possible therefore start aligned
- *
  * [BasicInputView] - base for all inputs
  * [InputView] - standard input
  * [PasswordInput] - password input
