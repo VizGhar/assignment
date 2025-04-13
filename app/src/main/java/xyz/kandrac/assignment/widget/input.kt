@@ -105,7 +105,7 @@ private fun BasicInputView(
 
         Layout(content = { title(); message?.invoke() }) { measurables, constraints ->
             val placeables = measurables.map { it.measure(constraints) }
-            val totalWidth = placeables.sumOf { it.width } + innerPaddingPx
+            val totalWidth = placeables.sumOf { it.width } + innerPaddingPx * (placeables.size - 1)
             if (totalWidth <= constraints.maxWidth) {
                 val height = placeables.maxOf { it.height }
                 layout(width = totalWidth, height = height) {
